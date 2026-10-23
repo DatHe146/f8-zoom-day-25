@@ -24,6 +24,12 @@ listChecks.forEach((listCheck) => {
             const inputCheckItem = checkItem.querySelector("input");
             inputCheckItem.toggleAttribute("checked");
             updateCount();
+
+            const targetSibling = Array.from(
+                checkItem.parentElement.children,
+            ).find((el) => el.matches(".check-all") && el !== checkItem);
+            const inputTarget = targetSibling.querySelector('input');
+            inputTarget.indeterminate = true;
         };
     });
 
