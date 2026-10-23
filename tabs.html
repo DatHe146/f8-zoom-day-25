@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .tabs {
+                margin: 20px;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+            }
+            .tab-item {
+                margin: 0 30px 0 0;
+                border: none;
+                background: transparent;
+            }
+            .content {
+                display: none;
+                transition: all ease 0.5s;
+            }
+            .tab-list .active {
+                border-bottom: 3px solid #333;
+                font-weight: 600;
+            }
+            .content-list {
+                margin-top: 20px;
+            }
+            .content-list .active {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="inner">
+                <div class="tabs">
+                    <div class="tab-list">
+                        <button class="tab-item">Tab 1</button
+                        ><button class="tab-item">Tab 2</button
+                        ><button class="tab-item">Tab 3</button>
+                    </div>
+                    <div class="content-list">
+                        <div class="content">content 1</div>
+                        <div class="content">content 2</div>
+                        <div class="content">content 3</div>
+                    </div>
+                </div>
+
+                <div class="tabs">
+                    <div class="tab-list">
+                        <button class="tab-item">Tab 1</button
+                        ><button class="tab-item">Tab 2</button
+                        ><button class="tab-item">Tab 3</button>
+                        <button class="tab-item">Tab 4</button>
+                        <button class="tab-item">Tab 5</button>
+                    </div>
+                    <div class="content-list">
+                        <div class="content">content 1</div>
+                        <div class="content">content 2</div>
+                        <div class="content">content 3</div>
+                        <div class="content">content 4</div>
+                        <div class="content">content 5</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./js/tabs.js"></script>
+    </body>
+</html>
