@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+            integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <style>
+            .slides {
+                overflow: hidden;
+                height: 200px;
+                position: relative;
+            }
+            .slide-inner {
+                display: flex;
+                /* translate: -500%; */
+            }
+
+            .slide-item {
+                width: 100%;
+                flex-shrink: 0;
+            }
+
+            .slide-img {
+                object-fit: cover;
+                width: 100vw;
+            }
+            .controls .prev-btn {
+                position: absolute;
+                top: 50%;
+                translate: 0 -50%;
+                display: flex;
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                background: #ccc;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+            }
+
+            .prev-btn.prev {
+                left: 15px;
+            }
+            .prev-btn.next {
+                right: 15px;
+            }
+            .pagination {
+                margin-top: 10px;
+                display: flex;
+                justify-content: center;
+            }
+            .pagination .dot {
+                width: 10px;
+                height: 10px;
+                background-color: #ccc;
+                border-radius: 50%;
+                margin: 0 10px;
+                transition: all ease 0.5s;
+            }
+            .dot.active {
+                background-color: gray;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="inner">
+                <div class="slides">
+                    <div class="slide-inner">
+                        <div class="slide-item">
+                            <img
+                                src="https://picsum.photos/seed/picsum/536/354"
+                                alt=""
+                                class="slide-img"
+                            />
+                        </div>
+                        <div class="slide-item">
+                            <img
+                                src="https://picsum.photos/id/1084/536/354?grayscale"
+                                alt=""
+                                class="slide-img"
+                            />
+                        </div>
+                        <div class="slide-item">
+                            <img
+                                src="https://picsum.photos/id/870/536/354?grayscale&blur=2"
+                                alt=""
+                                class="slide-img"
+                            />
+                        </div>
+                        <div class="slide-item">
+                            <img
+                                src="https://picsum.photos/id/1060/536/354?blur=2"
+                                alt=""
+                                class="slide-img"
+                            />
+                        </div>
+                        <div class="slide-item">
+                            <img
+                                src="https://picsum.photos/536/354"
+                                alt=""
+                                class="slide-img"
+                            />
+                        </div>
+                        <div class="slide-item">
+                            <img
+                                src="https://picsum.photos/536/354"
+                                alt=""
+                                class="slide-img"
+                            />
+                        </div>
+                        <div class="slide-item">
+                            <img
+                                src="https://picsum.photos/536/354"
+                                alt=""
+                                class="slide-img"
+                            />
+                        </div>
+                    </div>
+                    <div class="controls">
+                        <div class="prev-btn prev">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </div>
+                        <div class="prev-btn next">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <div class="dot active"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </div>
+        <script src="./js/slide.js"></script>
+    </body>
+</html>
